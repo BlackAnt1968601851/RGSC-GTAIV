@@ -1,0 +1,31 @@
+<?php
+header("Content-type: text/xml");
+?>
+<?xml version="1.0"?>
+<response>
+    <auth_token>46546540256465</auth_token>
+    <error>0</error>
+	<status>1</status>
+    <session_id>5456465123464</session_id>
+    <rockstar_id>
+        <id>123</id>
+        <email>Replace Me</email>
+        <avatar_url>Replace Me</avatar_url>
+        <created_date>2024-01-26T08:26:48.429Z</created_date>
+        <dob>2024-01-26T08:26:48.429Z</dob>
+        <country>US</country>
+        <zip_code>12345</zip_code>
+        <language>en</language>
+        <personal_webpage>Replace Me</personal_webpage>
+        <portal_visits>10</portal_visits>
+        <last_portal_login_date>2024-01-26T08:26:48.429Z</last_portal_login_date>
+        <standing>Replace Me</standing>
+        <nickname>Replace Me</nickname>
+        <accounts>
+            <account AccountID="1" Name="Replace Me" Platform="1"/>
+        </accounts>
+        <games>
+            <game ID="1" Name="GTAIV"/>
+        </games>
+    </rockstar_id>
+</response>

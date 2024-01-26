@@ -1,0 +1,21 @@
+﻿<response>
+<RockstarNews ImageURL="images/image1.jpg" LinkURL="http://gtaconnected.com/">
+    <Headline>Welcome to GTA Connected.</Headline>
+    <Body>
+Grand Theft Auto Connected is a multiplayer replacement modification to gta iv to make it easy to play online.
+    </Body>
+</RockstarNews>
+<RockstarNews ImageURL="images/image2.jpg" LinkURL="http://www.blackant02.com/">
+    <Headline>BlackAnt Test.</Headline>
+    <Body>
+Welcome to BlackAnt's test
+    </Body>
+</RockstarNews>
+<RockstarNews ImageURL="images/image2.jpg" LinkURL="http://discord.gg/gtrf">
+    <Headline>Grand Theft RevIVal</Headline>
+	<Body>
+Welcome to Grand Theft RevIVal Service we have events at http://discord.gg/gtrf
+This server is good for reviving GFWL edition of GTA IV.
+	</Body>
+</RockstarNews>
+</response>
