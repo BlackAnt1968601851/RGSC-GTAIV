@@ -1,68 +1,77 @@
 <?php
-header("Content-type: text/xml");
-// Change Xbox Live to true or false to hide or show the Xbox Live prompt when logging into social club on patch 6 or later.
-$Xbox_Live = true;
+$email = "Put Your Email Here";
+$password = "Put Your Password Here";
+// Tells social club you have an xbox live profile.
+$Xbox_Live = false;
+if ($_POST["username"] == $email) {
+	if ($_POST["password"] == $password) {
+		header("Content-type: text/xml");
+		if ($Xbox_Live == false) {
+			print('<?xml version="1.0"?>
+		<response>
+			<auth_token>46546540256465</auth_token>
+			<error>1</error>
+			<status>1</status>
+			<session_id>5456465123464</session_id>
+			<rockstar_id>
+				<id>123</id>
+				<email>Put Your Email Here.</email>
+				<avatar_url>https://mls.rockstargames.com/PE24.png</avatar_url>
+				<created_date>2024-01-26T08:26:48.429Z</created_date>
+				<dob>2024-01-26T08:26:48.429Z</dob>
+				<country>US</country>
+				<zip_code>12345</zip_code>
+				<language>en</language>
+				<personal_webpage>Put Your Website Here</personal_webpage>
+				<portal_visits>10</portal_visits>
+				<last_portal_login_date>2024-01-26T08:26:48.429Z</last_portal_login_date>
+				<standing>Good</standing>
+				<nickname>Change this</nickname>
+				<accounts>
+					<account AccountID="1" Name="Change this." Platform="1"/>
+				</accounts>
+				<games>
+					<game ID="1" Name="GTAIV"/>
+				</games>
+			</rockstar_id>
+		</response>');
+		}
 
-if ($Xbox_Live == false) {
-	print('<?xml version="1.0"?>
-<response>
-    <auth_token>46546540256465</auth_token>
-    <error>0</error>
-	<status>1</status>
-    <session_id>5456465123464</session_id>
-    <rockstar_id>
-        <id>123</id>
-        <email>admin@blackant02.com</email>
-        <avatar_url>https://mls.rockstargames.com/PE24.png</avatar_url>
-        <created_date>2024-01-26T08:26:48.429Z</created_date>
-        <dob>2024-01-26T08:26:48.429Z</dob>
-        <country>US</country>
-        <zip_code>12345</zip_code>
-        <language>en</language>
-        <personal_webpage>http://example.com/personal</personal_webpage>
-        <portal_visits>10</portal_visits>
-        <last_portal_login_date>2024-01-26T08:26:48.429Z</last_portal_login_date>
-        <standing>Good</standing>
-        <nickname>BlackAnt02</nickname>
-        <accounts>
-            <account AccountID="1" Name="BlackAnt02" Platform="1"/>
-        </accounts>
-        <games>
-            <game ID="1" Name="GTAIV"/>
-        </games>
-    </rockstar_id>
-</response>');
+		if ($Xbox_Live == true) {
+			print('<?xml version="1.0"?>
+		<response>
+			<auth_token>46546540256465</auth_token>
+			<error>1</error>
+			<status>1</status>
+			<session_id>5456465123464</session_id>
+			<rockstar_id>
+				<gamertag>Change gamertag here</gamertag>
+				<id>123</id>
+				<email>Put Your Email Here.</email>
+				<avatar_url>https://mls.rockstargames.com/PE24.png</avatar_url>
+				<created_date>2024-01-26T08:26:48.429Z</created_date>
+				<dob>2024-01-26T08:26:48.429Z</dob>
+				<country>US</country>
+				<zip_code>12345</zip_code>
+				<language>en</language>
+				<personal_webpage>Put Your Website Here</personal_webpage>
+				<portal_visits>10</portal_visits>
+				<last_portal_login_date>2024-01-26T08:26:48.429Z</last_portal_login_date>
+				<standing>Good</standing>
+				<nickname>Change this</nickname>
+				<accounts>
+					<account AccountID="1" Name="Change this." Platform="1"/>
+				</accounts>
+				<games>
+					<game ID="1" Name="GTAIV"/>
+				</games>
+			</rockstar_id>
+		</response>');
+		}
+		
+	}
 }
-
-if ($Xbox_Live == true) {
-	print('<?xml version="1.0"?>
-<response>
-    <auth_token>46546540256465</auth_token>
-    <error>0</error>
-	<status>1</status>
-    <session_id>5456465123464</session_id>
-    <rockstar_id>
-		<gamertag>BlackAnt02</gamertag>
-        <id>123</id>
-        <email>admin@blackant02.com</email>
-        <avatar_url>https://mls.rockstargames.com/PE24.png</avatar_url>
-        <created_date>2024-01-26T08:26:48.429Z</created_date>
-        <dob>2024-01-26T08:26:48.429Z</dob>
-        <country>US</country>
-        <zip_code>12345</zip_code>
-        <language>en</language>
-        <personal_webpage>http://example.com/personal</personal_webpage>
-        <portal_visits>10</portal_visits>
-        <last_portal_login_date>2024-01-26T08:26:48.429Z</last_portal_login_date>
-        <standing>Good</standing>
-        <nickname>BlackAnt02</nickname>
-        <accounts>
-            <account AccountID="1" Name="BlackAnt02" Platform="1"/>
-        </accounts>
-        <games>
-            <game ID="1" Name="GTAIV"/>
-        </games>
-    </rockstar_id>
-</response>');
+else {
+	
 }
 ?>
