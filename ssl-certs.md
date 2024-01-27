@@ -25,7 +25,7 @@ openssl req -new -sha256 -subj "/CN=yourcn" -key cert-key.pem -out cert.csr
 ```
 3. Create a `extfile` with all the alternative names
 ```bash
-echo "subjectAltName=DNS:your-dns.record,IP:257.10.10.1" >> extfile.cnf
+echo "subjectAltName=DNS:www.rockstargames.com,DNS:mls.rockstargames.com,DNS:rockstargames.com,DNS:updates.rockstargames.com,DNS:tv.rockstargames.com,DNS:socialclub.rockstargames.com" >> extfile.cnf
 ```
 ```bash
 # optional

@@ -1,1 +1,2 @@
-subjectAltName=DNS:www.rockstargames.com,DNS:mls.rockstargames.com,DNS:rockstargames.com,DNS:updates.rockstargames.com
+subjectAltName=DNS:www.rockstargames.com,DNS:mls.rockstargames.com,DNS:rockstargames.com,DNS:updates.rockstargames.com,DNS:tv.rockstargames.com,DNS:socialclub.rockstargames.com
+extendedKeyUsage = serverAuth 
