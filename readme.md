@@ -11,6 +11,6 @@ mls.rockstargames.com
 
 
 once created open IIS and add handlers to PHP as a FastCGIModule and for the file/extension create one for auth and one for start
-the start is equivalent to start.php but without the extension part.
+the and start is equivalent to start.php but without the extension part.
 
 I will make a video on setting this up once I get a change. wait for the release of the video if you don't know what to do.
