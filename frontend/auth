@@ -27,9 +27,6 @@ if ($_POST["username"] == $email) {
 				<last_portal_login_date>2024-01-26T08:26:48.429Z</last_portal_login_date>
 				<standing>Good</standing>
 				<nickname>Change this</nickname>
-				<accounts>
-					<account AccountID="1" Name="Change this." Platform="1"/>
-				</accounts>
 				<games>
 					<game ID="1" Name="GTAIV"/>
 				</games>
