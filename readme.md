@@ -14,4 +14,4 @@ mls.rockstargames.com
 install PHP Manager, PHP, and URL Rewrite before you start anything, they are in the requirements folder, I just didn't include php directly.
 add php to the code and it should already have all the Rewrites coded in the web.config.
 
-I will make a video on setting this up once I get a change. wait for the release of the video if you don't know what to do.
+I will make a video on setting this up once I get a chance. wait for the release of the video if you don't know what to do.
