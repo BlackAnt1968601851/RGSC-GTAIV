@@ -15,6 +15,14 @@ if (strlen($_POST["password"]) == 0) {
 }
 
 if ($down == false) {
+	if ($_SERVER['HTTP_USER_AGENT'] == "GTA4 Video Upload") {
+	header('Content-type: text/xml');
+	print('<?xml version="1.0"?>
+<response>
+  <session_id>5456465123464</session_id>
+</response>');
+	exit();
+	}
 	if ($_POST['username'] == $email) {
 		if ($_POST['password'] == $password) {
 			header("Content-type: text/xml");
